@@ -2,48 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>John Wilke – GIS Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Wilke | GIS Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
+      font-family: sans-serif;
       max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
       line-height: 1.6;
+      background-color: #fdfdfd;
     }
-    h1, h2 {
+    h1 {
+      font-size: 2rem;
       color: #2a4d69;
     }
+    h2 {
+      color: #4b86b4;
+    }
     a {
-      color: #1d70b8;
+      color: #2a4d69;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
-    }
     .project {
-      margin-bottom: 2rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 1.5rem;
+      background-color: #ffffff;
+    }
+    .project:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
-  <h1>John Wilke – GIS Portfolio</h1>
-  <p>Hello! I'm a GIS professional with a background in environmental studies and fieldwork. I specialize in spatial analysis, cartography, and interpreting geographic data to support meaningful decision-making.</p>
 
-  <p>Below are some selected GIS projects I've worked on. You can also <a href="jwilkegis-resume.pdf" target="_blank">view my resume</a> or find me on <a href="https://github.com/JWilkeGIS" target="_blank">GitHub</a>.</p>
+  <h1>John Wilke | GIS Portfolio</h1>
+  <p>Welcome! I'm a GIS analyst with a background in environmental studies, remote sensing, and fieldwork. I use spatial analysis and cartographic design to solve real-world problems — with a strong focus on ecology, terrain, and public data.</p>
 
-  <h2>Projects</h2>
+  <h2>🗂️ Projects</h2>
 
   <div class="project">
-  <h3>Candidate Locations for finding Lobster Mushrooms (Hypomyces lactifluorum) around Flagstaff, Arizona</h3>
-  <p>This map shows candidate locations for finding Lobster Mushrooms based on defined criteria created with QGIS. All data was downloaded from NASA and USGS, and all spatial processing was done by me using QGIS.</p>
-  <p><a href="HypomycesLactifluorum-project.pdf" target="_blank">Download high-quality PDF</a></p>
-  <img src="HypomycesLactifluorum-project.png" alt="Candidate Locations for Lobster Mushrooms Map" style="max-width:100%; height:auto; border: 1px solid #ccc;" />
-</div>
+    <h3><a href="./lobster-mushroom/">🍄 Lobster Mushroom Habitat Suitability</a></h3>
+    <p>Identifying potential habitats for <em>Hypomyces lactifluorum</em> in Northern Arizona using NDVI, elevation, and climate layers in QGIS. Includes full documentation and raster analysis workflow.</p>
+  </div>
 
+  <!-- Future projects can go below here -->
+  <!-- <div class="project">
+    <h3><a href="project-folder/">🌲 Another Project Title</a></h3>
+    <p>Brief summary of that project.</p>
+  </div> -->
 
-  <h2>Contact</h2>
-  <p>Email me at: <strong>wilkejohnny@aol.com</strong></p>
+  <h2>📫 Contact</h2>
+  <p>Email: <a href="mailto:johndoe@email.com">johndoe@email.com</a><br/>
+     GitHub: <a href="https://github.com/JWilkeGIS" target="_blank">JWilkeGIS</a>
+  </p>
 
 </body>
 </html>
