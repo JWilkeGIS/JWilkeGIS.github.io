@@ -30,11 +30,11 @@ The analysis focuses on high-elevation forests of Northern Arizona, particularly
    - AZ land use cover: International Centre for Tropical Agriculture (CIAT)
    - SRTM data: CGIAR.org
    - Roadway data: AZGEO open data
-   - Manually added point for NAU campus location
 
 2. **Preprocessing**
    - All layers reprojected to WGS 84 / Pseudo-mercator
    - Clipped layers to study extent by adding hand-drawn polygon layer named "Study extent"
+   - Manual addition of point layer for NAU Campus location, using OSM basemap for reference
 
 3. **Raster Suitability Criteria**
    - **Elevation** between 6000 - 9000 ft. (converted to meters: 1829 - 2744 meters)
