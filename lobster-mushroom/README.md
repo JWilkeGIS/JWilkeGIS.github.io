@@ -2,25 +2,25 @@
 *Modeling Suitable Habitat for Hypomyces lactifluorum in Northern Arizona*
 
 ## Overview
-This GIS project identifies suitable habitats for the lobster mushroom (*Hypomyces lactifluorum*) using terrain, vegetation, and climate data. These fungi parasitize Russula and Lactarius mushrooms and are prized by foragers for their distinctive flavor and appearance.
+This GIS project identifies suitable habitats for the lobster mushroom (*Hypomyces lactifluorum*) using terrain, land use, and elevation data. These northern Arizona mushrooms are sought after by foragers for their unique flavor and texture.
 
 The goal was to create a habitat suitability model in QGIS using publicly available datasets and raster-based analysis techniques.
 
 ## Objective
 - Identify areas in Northern Arizona most likely to support lobster mushroom growth.
-- Integrate environmental variables including elevation, vegetation cover, NDVI, and seasonal precipitation.
+- Integrate environmental variables including elevation and vegetation cover.
+- Integrate other chosen variables including proximity to major roadways and proximity to Northern Arizona University campus.
 - Produce a clear and visually informative suitability map.
 
 ## Study Area
-The analysis focuses on high-elevation forests of Northern Arizona, particularly areas within the Coconino and Kaibab National Forests known for monsoon moisture and mixed conifer ecosystems.
+The analysis focuses on high-elevation forests of Northern Arizona, particularly areas within the Coconino National Forest known for monsoon moisture and mixed conifer ecosystems.
 
 ![Map Preview](HypomycesLactifluorum-project.png)
 
 ## Tools Used
-- QGIS 3.x
+- QGIS 3.40 Bratislava
 - Raster Calculator
 - Slope & Reclassify tools
-- Python (limited PyQGIS for automation)
 
 ## Geoprocessing Workflow
 
@@ -48,7 +48,7 @@ The analysis focuses on high-elevation forests of Northern Arizona, particularly
 ## Results
 The final map highlights suitable zones in shaded forested regions above 2000 meters, especially those that receive monsoon precipitation and show high vegetative vigor.
 
-View the full report: [HypomycesLactifluorum-project.pdf](HypomycesLactifluorum-project.pdf)
+View the PDF: [HypomycesLactifluorum-project.pdf](HypomycesLactifluorum-project.pdf)
 
 ## Data Sources
 
