@@ -2,7 +2,7 @@
 *Modeling Suitable Habitat for Hypomyces lactifluorum in Northern Arizona*
 
 ## Overview
-This GIS project identifies suitable habitats for the lobster mushroom (*Hypomyces lactifluorum*) using terrain, land use, and elevation data. These northern Arizona mushrooms are sought after by foragers for their unique flavor and texture.
+This GIS project identifies suitable habitats for the lobster mushroom (*Hypomyces lactifluorum*) using terrain, land use, and elevation data.
 
 The goal was to create a habitat suitability model in QGIS using publicly available datasets and raster-based analysis techniques.
 
