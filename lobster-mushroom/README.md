@@ -8,7 +8,7 @@ The goal was to create a habitat suitability model in QGIS using publicly availa
 
 ## Objective
 - Identify top 3 accessible areas in Northern Arizona most likely to support lobster mushroom growth.
-- Integrate environmental variables including elevation and vegetation cover.
+- Integrate environmental variables including elevation, slope, and land use.
 - Integrate other chosen variables including proximity to major roadways and proximity to Northern Arizona University campus.
 - Produce a clear and visually informative suitability map.
 
