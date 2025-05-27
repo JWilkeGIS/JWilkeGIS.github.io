@@ -25,28 +25,40 @@ The analysis focuses on high-elevation forests of Northern Arizona, particularly
 ## Geoprocessing Workflow
 
 1. **Data Collection**
-   - Elevation: NASA SRTM
-   - Land Cover: USGS NLCD
-   - NDVI: MODIS (July–September composite)
-   - Precipitation: PRISM Climate Group
+   - Base map: OpenStreetMap
+   - AZ land use cover: International Centre for Tropical Agriculture (CIAT)
+   - SRTM data: CGIAR.org
+   - Roadway data: AZGEO open data
+   - Manually added point for NAU campus location
 
 2. **Preprocessing**
-   - All rasters reprojected to EPSG:5070 (Albers Equal Area)
-   - Clipped to study extent
+   - All layers reprojected to WGS 84 / Pseudo-mercator
+   - Clipped layers to study extent by adding hand-drawn polygon layer named "Study extent"
 
-3. **Suitability Criteria**
-   - **Elevation** between 2000–2800m  
-   - **NDVI** > 0.6 during monsoon months  
-   - **Land Cover**: filtered for forest types  
-   - **Slope** under 30° (optional refinement)
+3. ** Raster Suitability Criteria**
+   - **Elevation** between 6000 - 9000 ft. (converted to meters: 1829 - 2744 meters)
+   - **Land Cover**: filtered for "evergreen forest" land use
+   - **Slope** under 15% (optional refinement)
 
 4. **Raster Combination**
-   - Reclassified rasters (1 = suitable, 0 = unsuitable)
+   - Calculated Hillshade layer from SRTM layer
+   - Calculated Slope layer from hillshade layer
+   - Calculated raster defining slope less than or equal to 15% (1 = suitable, 0 = unsuitable)
+   - Reclassified all rasters (1 = suitable, 0 = unsuitable)
    - Used Raster Calculator to combine layers with equal weight
    - Final output is a binary suitability raster
+   - Converted suitability raster to vector layer named "Suitable areas"
+  
+5. **Vector Analysis**
+   -Performed buffer analysis on "Suitable areas" layer to show suitable areas within 1km of Primary Roads layer
+   -Used field calculator to calculate and subsequently filter out forested areas under 0.5km squared
+   -Performed Near analysis on buffered Suitable Areas to show top 3 candidate locations nearest to NAU
+
+6. **Map Production**
+   -Used QGIS layout editor to add map details such as text boxes, title, and other pertinent map details
 
 ## Results
-The final map highlights suitable zones in shaded forested regions above 2000 meters, especially those that receive monsoon precipitation and show high vegetative vigor.
+The final map highlights suitable zones in evergreen forested regions around NAU campus, with the top 3 candidate locations highlighted in green, and other candidate locations highlighted in orange.
 
 View the PDF: [HypomycesLactifluorum-project.pdf](HypomycesLactifluorum-project.pdf)
 
