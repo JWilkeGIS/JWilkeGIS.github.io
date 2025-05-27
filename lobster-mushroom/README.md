@@ -35,7 +35,7 @@ The analysis focuses on high-elevation forests of Northern Arizona, particularly
    - All layers reprojected to WGS 84 / Pseudo-mercator
    - Clipped layers to study extent by adding hand-drawn polygon layer named "Study extent"
 
-3. ** Raster Suitability Criteria**
+3. **Raster Suitability Criteria**
    - **Elevation** between 6000 - 9000 ft. (converted to meters: 1829 - 2744 meters)
    - **Land Cover**: filtered for "evergreen forest" land use
    - **Slope** under 15% (optional refinement)
