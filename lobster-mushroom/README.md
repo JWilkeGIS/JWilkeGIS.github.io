@@ -59,6 +59,7 @@ The analysis focuses on high-elevation forests of Northern Arizona, particularly
 
 6. **Map Production**
    - Used QGIS layout editor to add map details such as text boxes, title, and other pertinent visual details
+   - Exported map as a PDF and a PNG file
 
 ## Results
 The final map highlights suitable zones near highways in evergreen forested regions around NAU campus, with the top 3 candidate locations highlighted in green, and other candidate locations highlighted in orange.
