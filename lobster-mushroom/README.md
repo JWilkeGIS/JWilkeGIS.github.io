@@ -70,8 +70,8 @@ View the PDF: [HypomycesLactifluorum-project.pdf](HypomycesLactifluorum-project.
 | Dataset | Source | Link |
 |--------|--------|------|
 | Elevation | International Centre for Tropical Agriculture (CIAT) | [http://srtm.csi.cgiar.org](http://srtm.csi.cgiar.org/) |
-| Basemap | OpenStreetMap | [openstreetmap.org](openstreetmap.org) |
-| Land Use | USGS GAP Landfire | [https://www.usgs.gov](https://www.usgs.gov) |
+| Basemap | OpenStreetMap | [openstreetmap.org](https://www.openstreetmap.org/#map=13/35.19864/-111.62333) |
+| Land Use | USGS GAP Landfire | [https://www.usgs.gov](https://www.usgs.gov/) |
 | Highways | AZGeo Data | [https://azgeo-open-data-agic.hub.arcgis.com/](https://azgeo-open-data-agic.hub.arcgis.com/datasets/c8201b9c76db43c89af8d5ead4d35e14_2/explore?location=34.266073%2C-110.286569%2C6.61) |
 
 All datasets were used under open data or public domain terms.
