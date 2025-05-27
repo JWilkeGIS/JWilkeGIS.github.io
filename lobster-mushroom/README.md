@@ -80,7 +80,7 @@ All datasets were used under open data or public domain terms.
 ## Credits
 - Created 3/21/2025 by John Wilke
 - Jarvis A., H.I. Reuter, A.  Nelson, E. Guevara, 2008, Hole-filled  seamless SRTM data V4, International  Centre for Tropical  Agriculture (CIAT), available  from http://srtm.csi.cgiar.org.
-- OpenStreetMap Open Database License
+- OpenStreetMap (OSM) Open Database License
 - U.S. Geological Survey (USGS) - EarthExplorer
 - AZGeo Open Data Geoplatform - "Primary Roads"
 - Special thanks to the open data providers and QGIS developer community.
