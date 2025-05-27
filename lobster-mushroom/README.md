@@ -20,7 +20,8 @@ The analysis focuses on high-elevation forests of Northern Arizona, particularly
 ## Tools Used
 - QGIS 3.40 Bratislava
 - Raster Calculator
-- Slope & Reclassify tools
+- Field Calculator
+- Geoprocessing tools: Clip, Filter, Buffer, Near, Hillshade, Slope, Reproject, Raster to Vector
 
 ## Geoprocessing Workflow
 
@@ -41,9 +42,11 @@ The analysis focuses on high-elevation forests of Northern Arizona, particularly
    - **Slope** under 15% (optional refinement)
 
 4. **Raster Combination**
-   - Calculated Hillshade layer from SRTM layer
-   - Calculated Slope layer from hillshade layer
+   - Calculated Hillshade layer from SRTM layer to add shade visuals to basemap
+   - Calculated Slope layer from SRTM layer
    - Calculated raster defining slope less than or equal to 15% (1 = suitable, 0 = unsuitable)
+   - Filtered Land Use raster for evergreen forest land use (1 = suitable, 0 = unsuitable)
+   - Used raster calculator on SRTM layer to find areas with elevation between 1829 and 2744 meters (1 = suitable, 0 = unsuitable)
    - Reclassified all rasters (1 = suitable, 0 = unsuitable)
    - Used Raster Calculator to combine layers with equal weight
    - Final output is a binary suitability raster
@@ -55,10 +58,10 @@ The analysis focuses on high-elevation forests of Northern Arizona, particularly
    - Performed Near analysis on buffered Suitable Areas to show top 3 candidate locations nearest to NAU
 
 6. **Map Production**
-   - Used QGIS layout editor to add map details such as text boxes, title, and other pertinent map details
+   - Used QGIS layout editor to add map details such as text boxes, title, and other pertinent visual details
 
 ## Results
-The final map highlights suitable zones in evergreen forested regions around NAU campus, with the top 3 candidate locations highlighted in green, and other candidate locations highlighted in orange.
+The final map highlights suitable zones near highways in evergreen forested regions around NAU campus, with the top 3 candidate locations highlighted in green, and other candidate locations highlighted in orange.
 
 View the PDF: [HypomycesLactifluorum-project.pdf](HypomycesLactifluorum-project.pdf)
 
