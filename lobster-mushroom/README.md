@@ -81,9 +81,9 @@ All datasets were used under open data or public domain terms.
 - Model does not include host mushroom range (e.g., Russula sp.).
 
 ## Credits
-Created by John Wilke
-Jarvis A., H.I. Reuter, A.  Nelson, E. Guevara, 2008, Hole-filled  seamless SRTM data V4, International  Centre for Tropical  Agriculture (CIAT), available  from http://srtm.csi.cgiar.org.
-OpenStreetMap Open Database License
-USGS
-AZGEO
-Special thanks to the open data providers and QGIS developer community.
+- Created by John Wilke
+- Jarvis A., H.I. Reuter, A.  Nelson, E. Guevara, 2008, Hole-filled  seamless SRTM data V4, International  Centre for Tropical  Agriculture (CIAT), available  from http://srtm.csi.cgiar.org.
+- OpenStreetMap Open Database License
+- USGS
+- AZGEO
+- Special thanks to the open data providers and QGIS developer community.
