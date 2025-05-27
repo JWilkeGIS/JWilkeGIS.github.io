@@ -50,12 +50,12 @@ The analysis focuses on high-elevation forests of Northern Arizona, particularly
    - Converted suitability raster to vector layer named "Suitable areas"
   
 5. **Vector Analysis**
-   -Performed buffer analysis on "Suitable areas" layer to show suitable areas within 1km of Primary Roads layer
-   -Used field calculator to calculate and subsequently filter out forested areas under 0.5km squared
-   -Performed Near analysis on buffered Suitable Areas to show top 3 candidate locations nearest to NAU
+   - Performed buffer analysis on "Suitable areas" layer to show suitable areas within 1km of Primary Roads layer
+   - Used field calculator to calculate and subsequently filter out forested areas under 0.5km squared
+   - Performed Near analysis on buffered Suitable Areas to show top 3 candidate locations nearest to NAU
 
 6. **Map Production**
-   -Used QGIS layout editor to add map details such as text boxes, title, and other pertinent map details
+   - Used QGIS layout editor to add map details such as text boxes, title, and other pertinent map details
 
 ## Results
 The final map highlights suitable zones in evergreen forested regions around NAU campus, with the top 3 candidate locations highlighted in green, and other candidate locations highlighted in orange.
