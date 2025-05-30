@@ -24,15 +24,44 @@
       color: #2a4d69;
       text-decoration: none;
     }
+
+    /* Updated project styles for flex layout */
     .project {
       border: 1px solid #ddd;
       border-radius: 8px;
       padding: 1rem;
       margin-top: 1.5rem;
       background-color: #ffffff;
+
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
     }
+
     .project:hover {
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .project img {
+      flex-shrink: 0;
+      width: 200px;
+      border-radius: 4px;
+      margin-top: 0.25rem;
+    }
+
+    .project div.project-text {
+      flex: 1;
+    }
+
+    /* Responsive: stack image above text on narrow screens */
+    @media (max-width: 600px) {
+      .project {
+        flex-direction: column;
+      }
+      .project img {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
     }
   </style>
 </head>
@@ -45,14 +74,16 @@
 
   <div class="project">
     <h3><a href="./lobster-mushroom/">🍄 Lobster Mushroom Habitat Suitability</a></h3>
-    <p>Identifying potential habitats for <em>Hypomyces lactifluorum</em> in Northern Arizona using SRTM, land use cover, and road layers in QGIS. Includes full documentation and raster analysis workflow.</p>
+    <p>Identifying potential habitats for <em>Hypomyces lactifluorum</em> in Northern Arizona using NDVI, elevation, and climate layers in QGIS. Includes full documentation and raster analysis workflow.</p>
   </div>
 
   <div class="project">
-  <h3><a href="https://storymaps.arcgis.com/stories/55fc75364c4a420d83c5b79541b39296" target="_blank">🌄 Afton Star Trail Restoration</a></h3>
-  <img src="images/20230709_150049.jpg" alt="Afton Star StoryMap thumbnail" style="max-width: 300px; width: 100%; border-radius: 4px; margin-top: 0.5rem;" />
-  <p>In 2023, I helped plan and reconstruct a sustainable trail leading to the iconic Afton Star in Wyoming. This StoryMap covers the project’s background, sustainable trail design, and collaborative fieldwork process.</p>
-</div>
+    <img src="images/20230709_150049.jpg" alt="Afton Star StoryMap thumbnail" />
+    <div class="project-text">
+      <h3><a href="https://storymaps.arcgis.com/stories/55fc75364c4a420d83c5b79541b39296" target="_blank" rel="noopener">🌄 Afton Star Trail Restoration</a></h3>
+      <p>In 2023, I helped plan and reconstruct a sustainable trail leading to the iconic Afton Star in Wyoming. This StoryMap covers the project’s background, sustainable trail design, and collaborative fieldwork process.</p>
+    </div>
+  </div>
 
   <!-- Future projects can go below here -->
   <!-- <div class="project">
@@ -60,13 +91,13 @@
     <p>Brief summary of that project.</p>
   </div> -->
 
-<h2>📫 Contact</h2>
-<p>
-  Email: <a href="mailto:wilkejohnny@aol.com">wilkejohnny@aol.com</a><br/>
-  GitHub: <a href="https://github.com/JWilkeGIS" target="_blank" rel="noopener">JWilkeGIS</a><br/>
-  LinkedIn: <a href="https://www.linkedin.com/in/johnny-wilke-7a47a2367/" target="_blank" rel="noopener">johnny-wilke</a><br/>
-  <a href="jwilkegis-resume.pdf" target="_blank" rel="noopener">📄 View My Resume</a>
-</p>
+  <h2>📫 Contact</h2>
+  <p>
+    Email: <a href="mailto:wilkejohnny@aol.com">wilkejohnny@aol.com</a><br/>
+    GitHub: <a href="https://github.com/JWilkeGIS" target="_blank" rel="noopener">JWilkeGIS</a><br/>
+    LinkedIn: <a href="https://www.linkedin.com/in/johnny-wilke-7a47a2367/" target="_blank" rel="noopener">johnny-wilke</a><br/>
+    <a href="jwilkegis-resume.pdf" target="_blank" rel="noopener">📄 View My Resume</a>
+  </p>
 
 </body>
 </html>
